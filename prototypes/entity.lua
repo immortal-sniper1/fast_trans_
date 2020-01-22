@@ -346,12 +346,7 @@ data:extend({
 
 -----mk2
 
-
-
-
-
-
-  {
+ {
     type = "locomotive",
     name = "fast-one-mk2",
     localised_name = {"item-name.fast-one-mk2"},
@@ -679,12 +674,7 @@ data:extend({
 
 
 
-
-
-
-
 ---MK3
-
 
   {
     type = "locomotive",
@@ -1016,13 +1006,24 @@ data:extend({
 
 
 
+
+
+
+
+
+
+
+
+
+
+
   ---wagons
 
   {
     type = "cargo-wagon",
     name = "cargo-wagon-immortal-mk2",
     icon = "__base__/graphics/icons/cargo-wagon.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
     inventory_size = 80,
     minable = {mining_time = 1, result = "cargo-wagon-immortal-mk2"},
@@ -1041,7 +1042,7 @@ data:extend({
     connection_distance = 3,
     joint_distance = 4,
     energy_per_hit_point = 5,
-    resistances =
+resistances =
     {
       {
         type = "fire",
@@ -1065,7 +1066,7 @@ data:extend({
       },
       {
         type = "acid",
-        decrease = 10,
+        decrease = 3,
         percent = 20
       }
     },
@@ -1404,8 +1405,21 @@ data:extend({
         }
       }
     },
+    minimap_representation =
+    {
+      filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
+      flags = {"icon"},
+      size = {20, 40},
+      scale = 0.5
+    },
+    selected_minimap_representation =
+    {
+      filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
+      flags = {"icon"},
+      size = {20, 40},
+      scale = 0.5
+    },
     wheels = standard_train_wheels,
-    rail_category = "regular",
     drive_over_tie_trigger = drive_over_tie(),
     tie_distance = 50,
     working_sound =
@@ -1421,8 +1435,12 @@ data:extend({
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
     sound_minimum_speed = 0.5;
-    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 }
-  },
+    vehicle_impact_sound = generic_impact_sound(),
+    water_reflection = locomotive_reflection()
+  },    
+
+
+
 
 
 
@@ -1432,7 +1450,7 @@ data:extend({
     type = "fluid-wagon",
     name = "fluid-wagon-immortal-mk2",
     icon = "__base__/graphics/icons/fluid-wagon.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
     minable = {mining_time = 1, result = "fluid-wagon-immortal-mk2"},
     mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -1475,7 +1493,7 @@ data:extend({
       },
       {
         type = "acid",
-        decrease = 10,
+        decrease = 3,
         percent = 20
       }
     },
@@ -1579,8 +1597,21 @@ data:extend({
         }
       }
     },
+    minimap_representation =
+    {
+      filename = "__base__/graphics/entity/fluid-wagon/fluid-wagon-minimap-representation.png",
+      flags = {"icon"},
+      size = {20, 40},
+      scale = 0.5
+    },
+    selected_minimap_representation =
+    {
+      filename = "__base__/graphics/entity/fluid-wagon/fluid-wagon-selected-minimap-representation.png",
+      flags = {"icon"},
+      size = {20, 40},
+      scale = 0.5
+    },
     wheels = standard_train_wheels,
-    rail_category = "regular",
     drive_over_tie_trigger = drive_over_tie(),
     tie_distance = 50,
     working_sound =
@@ -1594,7 +1625,8 @@ data:extend({
     },
     crash_trigger = crash_trigger(),
     sound_minimum_speed = 0.5;
-    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 }
+    vehicle_impact_sound = generic_impact_sound(),
+    water_reflection = locomotive_reflection()
   },
 
 
@@ -1614,7 +1646,7 @@ data:extend({
     type = "cargo-wagon",
     name = "cargo-wagon-immortal-mk3",
     icon = "__base__/graphics/icons/cargo-wagon.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
     inventory_size = 160,
     minable = {mining_time = 1, result = "cargo-wagon-immortal-mk3"},
@@ -1657,7 +1689,7 @@ data:extend({
       },
       {
         type = "acid",
-        decrease = 10,
+        decrease = 3,
         percent = 20
       }
     },
@@ -1996,8 +2028,21 @@ data:extend({
         }
       }
     },
+    minimap_representation =
+    {
+      filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-minimap-representation.png",
+      flags = {"icon"},
+      size = {20, 40},
+      scale = 0.5
+    },
+    selected_minimap_representation =
+    {
+      filename = "__base__/graphics/entity/cargo-wagon/cargo-wagon-selected-minimap-representation.png",
+      flags = {"icon"},
+      size = {20, 40},
+      scale = 0.5
+    },
     wheels = standard_train_wheels,
-    rail_category = "regular",
     drive_over_tie_trigger = drive_over_tie(),
     tie_distance = 50,
     working_sound =
@@ -2013,10 +2058,9 @@ data:extend({
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
     sound_minimum_speed = 0.5;
-    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 }
+    vehicle_impact_sound = generic_impact_sound(),
+    water_reflection = locomotive_reflection()
   },
-
-
 
 
 
@@ -2024,7 +2068,7 @@ data:extend({
     type = "fluid-wagon",
     name = "fluid-wagon-immortal-mk3",
     icon = "__base__/graphics/icons/fluid-wagon.png",
-    icon_size = 32,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
     minable = {mining_time = 1, result = "fluid-wagon-immortal-mk3"},
     mined_sound = {filename = "__core__/sound/deconstruct-medium.ogg"},
@@ -2067,7 +2111,7 @@ data:extend({
       },
       {
         type = "acid",
-        decrease = 10,
+        decrease = 3,
         percent = 20
       }
     },
@@ -2171,8 +2215,21 @@ data:extend({
         }
       }
     },
+    minimap_representation =
+    {
+      filename = "__base__/graphics/entity/fluid-wagon/fluid-wagon-minimap-representation.png",
+      flags = {"icon"},
+      size = {20, 40},
+      scale = 0.5
+    },
+    selected_minimap_representation =
+    {
+      filename = "__base__/graphics/entity/fluid-wagon/fluid-wagon-selected-minimap-representation.png",
+      flags = {"icon"},
+      size = {20, 40},
+      scale = 0.5
+    },
     wheels = standard_train_wheels,
-    rail_category = "regular",
     drive_over_tie_trigger = drive_over_tie(),
     tie_distance = 50,
     working_sound =
@@ -2186,35 +2243,9 @@ data:extend({
     },
     crash_trigger = crash_trigger(),
     sound_minimum_speed = 0.5;
-    vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 }
+    vehicle_impact_sound = generic_impact_sound(),
+    water_reflection = locomotive_reflection()
   },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
