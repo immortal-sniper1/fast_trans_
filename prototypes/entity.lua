@@ -1435,7 +1435,9 @@ resistances =
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
     sound_minimum_speed = 0.5;
-    vehicle_impact_sound = generic_impact_sound(),
+    --vehicle_impact_sound = generic_impact_sound(),
+    --vehicle_impact_sound = sounds.generic_impact,
+
     water_reflection = locomotive_reflection()
   },    
 
@@ -1625,7 +1627,8 @@ resistances =
     },
     crash_trigger = crash_trigger(),
     sound_minimum_speed = 0.5;
-    vehicle_impact_sound = generic_impact_sound(),
+    --vehicle_impact_sound = generic_impact_sound(),
+    --vehicle_impact_sound = sounds.generic_impact,
     water_reflection = locomotive_reflection()
   },
 
@@ -2058,7 +2061,8 @@ resistances =
     open_sound = { filename = "__base__/sound/machine-open.ogg", volume = 0.85 },
     close_sound = { filename = "__base__/sound/machine-close.ogg", volume = 0.75 },
     sound_minimum_speed = 0.5;
-    vehicle_impact_sound = generic_impact_sound(),
+    --vehicle_impact_sound = generic_impact_sound(),
+    --vehicle_impact_sound = sounds.generic_impact,
     water_reflection = locomotive_reflection()
   },
 
@@ -2243,7 +2247,8 @@ resistances =
     },
     crash_trigger = crash_trigger(),
     sound_minimum_speed = 0.5;
-    vehicle_impact_sound = generic_impact_sound(),
+    --vehicle_impact_sound = generic_impact_sound(),
+    --vehicle_impact_sound = sounds.generic_impact,
     water_reflection = locomotive_reflection()
   },
 

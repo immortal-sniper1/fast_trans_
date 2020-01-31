@@ -19,10 +19,10 @@ data:extend({
     enabled = "false",
     ingredients = 
     {
-      {"fast-one",3},
-      {"steel-plate",500},
-      {"iron-plate",500},
-      {"electronic-circuit",200},
+      {"fast-one",2},
+      {"steel-plate",200},
+      {"iron-plate",200},
+      {"electronic-circuit",100},
 
     },
     result = "fast-one-mk2"
@@ -34,10 +34,10 @@ data:extend({
     enabled = "false",
     ingredients = 
     {
-      {"fast-one-mk2",5},
-      {"steel-plate",1000},
-      {"iron-plate",1000},
-      {"electronic-circuit",700},
+      {"fast-one-mk2",2},
+      {"steel-plate",200},
+      {"iron-plate",100},
+      {"electronic-circuit",300},
 
     },
     result = "fast-one-mk3"
