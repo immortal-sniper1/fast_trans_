@@ -1,8 +1,3 @@
-
-
-
-
-
 data:extend({
 
 
@@ -69,6 +64,7 @@ data:extend({
       fuel_categories = {"chemical","nuclear","giga-fuel"},
       effectivity = 0.6,
       fuel_inventory_size = 7,
+      burnt_inventory_size = 1,
       smoke =
       {
         {
@@ -407,6 +403,7 @@ data:extend({
       fuel_categories = {"chemical","nuclear","giga-fuel"},
       effectivity = 0.5,
       fuel_inventory_size = 7,
+      burnt_inventory_size = 1,
       smoke =
       {
         {
@@ -743,6 +740,7 @@ data:extend({
       fuel_categories = {"giga-fuel","nuclear"},
       effectivity = 0.35,
       fuel_inventory_size = 7,
+      burnt_inventory_size = 1,
       smoke =
       {
         {
