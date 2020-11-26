@@ -1,3 +1,37 @@
+v29
+	-icon changes:
+		entities:
+			fast-train-immortal
+			fast-train-immortal-mk2
+			fast-train-immortal-mk3
+			cargo-wagon-immortal-mk2
+			cargo-wagon-immortal-mk3
+			fluid-wagon-immortal-mk2
+			fluid-wagon-immortal-mk3
+		intermediate products:
+			giga-fuel
+			giga-fuel-mk2
+			giga-fuel-mk3
+		recipes:
+			giga-fuel-from-solid-fuel
+			giga-fuel-from-heavy-oil-and-coal
+			giga-fuel-from-light-oil-and-coal
+			giga-fuel-mk2-from-giga-fuel
+			giga-fuel-mk3-from-giga-fuel-mk2-and-ufc
+			fast-train-immortal
+			fast-train-immortal-mk2
+			fast-train-immortal-mk3
+			cargo-wagon-immortal-mk2
+			cargo-wagon-immortal-mk3
+			fluid-wagon-immortal-mk2
+			fluid-wagon-immortal-mk3
+		technologies:
+			fast-train-immortal
+			fast-train-immortal-mk2
+			fast-train-immortal-mk3
+	-the giga fuel is no longer categorized as energy. it is categorized as an intermediate product and sorted between regular rocket-fuel and nuclear-fuel in the crafting menu
+	
+
 v23
 fuel bugs
 
@@ -9,21 +43,21 @@ v20  bugs & productivity modules
 v17
   -added changelog
   -graphics fixes for mk1
-  -removed pipes from fluid wadons to reduce incredient cont so assemblers 2 can make them 
+  -removed pipes from fluid wagons to reduce ingredient count so assemblers 2 can make them 
   -locale 
   - py raw ores support and some conversion recipes 
-  -reduced stack size for giga fule mk2-3 to 10  1
+  -reduced stack size for giga fuel mk2-3 to 10  1
 
 
 
 
 
-016 fuel icon update and the addition of the giga_fuel_mk3
-015 bug fix and added giga_fuel-mk2
-014 added some migrated fuels form different mods + made mk3 at 30mw
+016 fuel icon update and the addition of the giga-fuel-mk3
+015 bug fix and added giga-fuel-mk2
+014 added some migrated fuels from different mods + made mk3 at 30mw
 013 added x2 and x4 wagons
 009 small fix and 21mb smaller
 007 MK2 added
 006 hd done right
-005 hd color to be aided later
+005 hd color to be added later
 003 fixed graphics

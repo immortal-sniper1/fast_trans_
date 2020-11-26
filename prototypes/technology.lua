@@ -3,7 +3,7 @@ data:extend({
       type = "technology",
       name = "fast-one-tech",
 
-      icon = "__fast_trans__/graphics/tech.png",
+      icon = "__fast_trans__/graphics/locomotive-immortal.png",
 	  icon_size = 128,
       effects =
       {
@@ -19,8 +19,6 @@ data:extend({
             type = "unlock-recipe",
             recipe = "fluid-wagon-immortal-mk2"
         }
-
-
       },
       prerequisites = { "railway"},
       unit =
@@ -43,7 +41,7 @@ data:extend({
       type = "technology",
       name = "fast-one-tech-mk2",
     
-      icon = "__fast_trans__/graphics/tech2.png",
+      icon = "__fast_trans__/graphics/locomotive-immortal-mk2.png",
     icon_size = 128,
       effects =
       {
@@ -59,7 +57,6 @@ data:extend({
             type = "unlock-recipe",
             recipe = "fluid-wagon-immortal-mk3"
         }
-
       },
       prerequisites = { "fast-one-tech"},
       unit =
@@ -71,20 +68,17 @@ data:extend({
           {"logistic-science-pack", 50},
           {"military-science-pack", 150},
           {"chemical-science-pack", 30},
-          
-      
         },
         time = 20
       }
   },
 
 
-
     {
       type = "technology",
       name = "fast-one-tech-mk3",
     
-      icon = "__fast_trans__/graphics/tech3.png",
+      icon = "__fast_trans__/graphics/locomotive-immortal-mk3.png",
     icon_size = 128,
       effects =
       {
@@ -104,13 +98,10 @@ data:extend({
           {"military-science-pack", 198},
           {"chemical-science-pack", 45},
           {"utility-science-pack", 30},
-           
-      
         },
         time = 20
       }
   }
-
 
 })
 
