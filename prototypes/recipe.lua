@@ -109,8 +109,8 @@ data:extend({
     {
       {"giga-fuel",25}
     },
-    results = { { name = "giga-fuel-mk2", amount = 10 }
-    },
+    result = "giga-fuel-mk2",
+    result_count = 10,
 	icon = "__fast_trans__/graphics/giga-fuel-mk2-from-giga-fuel.png",
 	icon_size = 64, icon_mipmaps = 4,
 	order = "q[giga-fuel]-d[giga-fuel-mk2]"
@@ -126,8 +126,8 @@ data:extend({
       {"giga-fuel-mk2",16},
       {"uranium-fuel-cell",16}
      },
-    results = { { name = "giga-fuel-mk3", amount = 4 }
-    },
+    result = "giga-fuel-mk3",
+    result_count = 4,
 	icon = "__fast_trans__/graphics/giga-fuel-mk3-from-giga-fuel-mk2-and-ufc.png",
 	icon_size = 64, icon_mipmaps = 4,
 	order = "q[giga-fuel]-e[giga-fuel-mk3]"

@@ -3,7 +3,7 @@ data:extend({
 {
     type = "item-with-entity-data",
     name = "fast-one",
-    --localised_name = {"item-name.fast-one"},
+    localised_name = {"item-name.fast-one"},
     icon = "__fast_trans__/graphics/fast-train-immortal.png",
 	icon_size = 64, icon_mipmaps = 4,
     subgroup = "transport",
@@ -37,6 +37,7 @@ data:extend({
 {
     type = "item-with-entity-data",
     name = "cargo-wagon-immortal-mk2",
+    localised_name = {"item-name.cargo-wagon-immortal-mk2"},
     icon = "__fast_trans__/graphics/cargo-wagon-immortal-mk2.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "transport",
@@ -48,6 +49,7 @@ data:extend({
 {
     type = "item-with-entity-data",
     name = "fluid-wagon-immortal-mk2",
+    localised_name = {"item-name.fluid-wagon-immortal-mk2"},
     icon = "__fast_trans__/graphics/fluid-wagon-immortal-mk2.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "transport",
@@ -59,6 +61,7 @@ data:extend({
 {
     type = "item-with-entity-data",
     name = "cargo-wagon-immortal-mk3",
+    localised_name = {"item-name.cargo-wagon-immortal-mk3"},
     icon = "__fast_trans__/graphics/cargo-wagon-immortal-mk3.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "transport",
@@ -70,6 +73,7 @@ data:extend({
 {
     type = "item-with-entity-data",
     name = "fluid-wagon-immortal-mk3",
+    localised_name = {"item-name.fluid-wagon-immortal-mk3"},
     icon = "__fast_trans__/graphics/fluid-wagon-immortal-mk3.png",
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "transport",
