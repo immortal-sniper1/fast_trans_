@@ -1,47 +1,47 @@
 data:extend({
  {
     type = "recipe",
-    name = "fast-one-mk1 recipe",
-    enabled = "false",
+    name = "fast-one-mk1",
+    enabled = false ,
     ingredients = 
     {
-      {"locomotive",2},
-      {"steel-plate",200},
-      {"iron-plate",500},
+      {type = "item", name = "locomotive", amount = 2},
+      {type = "item", name = "steel-plate", amount = 200},
+      {type = "item", name = "iron-plate", amount = 500}
     },
-    result = "fast-one",
+    results = {{type="item", name= "fast-one-mk1", amount=1}},
 	icon = "__fast_trans__/graphics/fast-train-immortal.png",
 	icon_size = 64, icon_mipmaps = 4
  },
 
  {
     type = "recipe",
-    name = "fast-one-mk2 recipe",
-    enabled = "false",
+    name = "fast-one-mk2",
+    enabled = false ,
     ingredients = 
     {
-      {"fast-one",2},
-      {"steel-plate",200},
-      {"iron-plate",200},
-      {"electronic-circuit",100},
+      {type = "item", name = "fast-one-mk1", amount = 2},
+      {type = "item", name = "steel-plate", amount = 200},
+      {type = "item", name = "iron-plate", amount = 200},
+      {type = "item", name = "electronic-circuit", amount = 100}
     },
-    result = "fast-one-mk2",
+    results = {{type="item", name= "fast-one-mk2", amount=1}},
 	icon = "__fast_trans__/graphics/fast-train-immortal-mk2.png",
 	icon_size = 64, icon_mipmaps = 4
  },
 
  {
     type = "recipe",
-    name = "fast-one-mk3 recipe",
-    enabled = "false",
+    name = "fast-one-mk3",
+    enabled = false ,
     ingredients = 
     {
-      {"fast-one-mk2",2},
-      {"steel-plate",200},
-      {"iron-plate",100},
-      {"electronic-circuit",300},
+      {type = "item", name = "fast-one-mk2", amount = 2},
+      {type = "item", name = "steel-plate", amount = 200},
+      {type = "item", name = "iron-plate", amount = 100},
+      {type = "item", name = "electronic-circuit", amount = 300}
     },
-    result = "fast-one-mk3",
+    results = {{type="item", name= "fast-one-mk3", amount=1}},
 	icon = "__fast_trans__/graphics/fast-train-immortal-mk3.png",
 	icon_size = 64, icon_mipmaps = 4
  },
@@ -57,13 +57,13 @@ data:extend({
     type = "recipe",
     name = "giga-fuel-from-light-oil-and-coal",
     category = "crafting-with-fluid",
-    enabled = "true",
+    enabled =  true ,
     ingredients =
     {
-      {type="fluid", name="light-oil", amount=300},
-      {"coal",375}
+      {type="fluid", name="light-oil", amount = 300},
+      {type = "item", name = "coal", amount = 375}
     },
-    result = "giga-fuel",
+    results = {{type="item", name= "giga-fuel", amount=1}},
 	icon = "__fast_trans__/graphics/giga-fuel-from-light-oil-and-coal.png",
 	icon_size = 64, icon_mipmaps = 4,
 	order = "q[giga-fuel]-c[giga-fuel-from-light-oil-and-coal]"
@@ -73,13 +73,13 @@ data:extend({
     type = "recipe",
     name = "giga-fuel-from-heavy-oil-and-coal",
     category = "crafting-with-fluid",
-    enabled = "true",
+    enabled =  true ,
     ingredients =
     {
-      {type="fluid", name="heavy-oil", amount=300},
-      {"coal",350}
+      {type="fluid", name="heavy-oil", amount=  300},
+      {type = "item", name = "coal", amount = 350}
     },
-    result = "giga-fuel",
+    results = {{type="item", name= "giga-fuel", amount=1}},
 	icon = "__fast_trans__/graphics/giga-fuel-from-heavy-oil-and-coal.png",
 	icon_size = 64, icon_mipmaps = 4,
 	order = "q[giga-fuel]-b[giga-fuel-from-heavy-oil-and-coal]"
@@ -89,12 +89,12 @@ data:extend({
     type = "recipe",
     name = "giga-fuel-from-solid-fuel",
 
-    enabled = "true",
+    enabled =  true ,
     ingredients =
     {
-      {"solid-fuel",125}
+      {type = "item", name = "solid-fuel", amount = 125}
     },
-    result = "giga-fuel",
+    results = {{type="item", name= "giga-fuel", amount=1}},
 	icon = "__fast_trans__/graphics/giga-fuel-from-solid-fuel.png",
 	icon_size = 64, icon_mipmaps = 4,
 	order = "q[giga-fuel]-a[giga-fuel-from-solid-fuel]"
@@ -104,13 +104,13 @@ data:extend({
     type = "recipe",
     name = "giga-fuel-mk2",
 
-    enabled = "true",
+    enabled =  true ,
     ingredients =
     {
-      {"giga-fuel",25}
+      {type = "item", name = "giga-fuel", amount = 25}
     },
-    result = "giga-fuel-mk2",
-    result_count = 10,
+    results = {{type="item", name= "giga-fuel-mk2", amount=10}},
+    -- result_count = 10,
 	icon = "__fast_trans__/graphics/giga-fuel-mk2-from-giga-fuel.png",
 	icon_size = 64, icon_mipmaps = 4,
 	order = "q[giga-fuel]-d[giga-fuel-mk2]"
@@ -120,14 +120,14 @@ data:extend({
     type = "recipe",
     name = "giga-fuel-mk3",
 
-    enabled = "true",
+    enabled =  true ,
     ingredients =
     {
-      {"giga-fuel-mk2",16},
-      {"uranium-fuel-cell",16}
+      {type = "item", name = "giga-fuel-mk2", amount = 16},
+      {type = "item", name = "uranium-fuel-cell", amount = 16}
      },
-    result = "giga-fuel-mk3",
-    result_count = 4,
+    results = {{type="item", name= "giga-fuel-mk3", amount=4}},
+    -- result_count = 4,
 	icon = "__fast_trans__/graphics/giga-fuel-mk3-from-giga-fuel-mk2-and-ufc.png",
 	icon_size = 64, icon_mipmaps = 4,
 	order = "q[giga-fuel]-e[giga-fuel-mk3]"
@@ -141,12 +141,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"iron-gear-wheel", 10},
-      {"cargo-wagon", 3},
-      {"iron-plate", 20},
-      {"steel-plate", 20}
+      {type = "item", name = "iron-gear-wheel",  amount = 10},
+      {type = "item", name = "cargo-wagon",  amount = 3},
+      {type = "item", name = "iron-plate",  amount = 20},
+      {type = "item", name = "steel-plate",  amount = 20}
     },
-    result = "cargo-wagon-immortal-mk2",
+    results = {{type="item", name= "cargo-wagon-immortal-mk2", amount=1}},
 	icon = "__fast_trans__/graphics/cargo-wagon-immortal-mk2.png",
 	icon_size = 64, icon_mipmaps = 4
  },
@@ -158,12 +158,12 @@ data:extend({
     energy_required = 1.5,
     ingredients =
     {
-      {"iron-gear-wheel", 10},
-      {"fluid-wagon", 3},
-      {"steel-plate", 16},
-      {"storage-tank", 2}
+      {type = "item", name = "iron-gear-wheel", amount =  10},
+      {type = "item", name = "fluid-wagon",  amount = 3},
+      {type = "item", name = "steel-plate", amount =  16},
+      {type = "item", name = "storage-tank",  amount = 2}
     },
-    result = "fluid-wagon-immortal-mk2",
+    results = {{type="item", name= "fluid-wagon-immortal-mk2", amount=1}},
 	icon = "__fast_trans__/graphics/fluid-wagon-immortal-mk2.png",
 	icon_size = 64, icon_mipmaps = 4
  },
@@ -175,12 +175,12 @@ data:extend({
     enabled = false,
     ingredients =
     {
-      {"iron-gear-wheel", 10},
-      {"cargo-wagon-immortal-mk2", 3},
-      {"iron-plate", 20},
-      {"steel-plate", 20}
+      {type = "item", name = "iron-gear-wheel",  amount = 10},
+      {type = "item", name = "cargo-wagon-immortal-mk2", amount =  3},
+      {type = "item", name = "iron-plate", amount =  20},
+      {type = "item", name = "steel-plate",  amount = 20}
     },
-    result = "cargo-wagon-immortal-mk3",
+    results = {{type="item", name= "cargo-wagon-immortal-mk3", amount=1}},
 	icon = "__fast_trans__/graphics/cargo-wagon-immortal-mk3.png",
 	icon_size = 64, icon_mipmaps = 4
  },
@@ -192,15 +192,15 @@ data:extend({
     energy_required = 1.5,
     ingredients =
     {
-      {"iron-gear-wheel", 10},
-      {"fluid-wagon-immortal-mk2", 3},
-      {"steel-plate", 16},
-      {"storage-tank", 2}
+      {type = "item", name = "iron-gear-wheel",  amount = 10},
+      {type = "item", name = "fluid-wagon-immortal-mk2",  amount = 3},
+      {type = "item", name = "steel-plate",  amount = 16},
+      {type = "item", name = "storage-tank",  amount = 2}
     },
-    result = "fluid-wagon-immortal-mk3",
+    results = {{type="item", name= "fluid-wagon-immortal-mk3", amount=1}},
 	icon = "__fast_trans__/graphics/fluid-wagon-immortal-mk3.png",
 	icon_size = 64, icon_mipmaps = 4
- },
+ }
 
 
 })

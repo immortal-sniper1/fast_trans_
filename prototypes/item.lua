@@ -7,12 +7,12 @@ data:extend({
   },
 {
     type = "item-with-entity-data",
-    name = "fast-one",
+    name = "fast-one-mk1",
     localised_name = {"item-name.fast-one"},
     icon = "__fast_trans__/graphics/fast-train-immortal.png",
 	icon_size = 64, icon_mipmaps = 4,
     subgroup = "transport",
-    place_result="fast-one",
+    place_result="fast-one-mk1",
     stack_size = 15
 },
 

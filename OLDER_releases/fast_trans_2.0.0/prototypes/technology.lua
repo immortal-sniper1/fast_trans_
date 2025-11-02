@@ -9,7 +9,7 @@ data:extend({
       {
         {
             type = "unlock-recipe",
-            recipe = "fast-one-mk1 recipe"
+            recipe = "fast-one-mk1"
         },
         {
             type = "unlock-recipe",
@@ -47,7 +47,7 @@ data:extend({
       {
         {
             type = "unlock-recipe",
-            recipe = "fast-one-mk2 recipe"
+            recipe = "fast-one-mk2"
         },
         {
             type = "unlock-recipe",
@@ -84,7 +84,7 @@ data:extend({
       {
         {
             type = "unlock-recipe",
-            recipe = "fast-one-mk3 recipe"
+            recipe = "fast-one-mk3"
         }
       },
       prerequisites = { "fast-one-tech-mk2"},
