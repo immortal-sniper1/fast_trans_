@@ -301,22 +301,6 @@ end;
 
 
 
-local meld = require("meld")
-if mods["elevated-rails"] then
-  local updates = require("__elevated-rails__/prototypes/sloped-trains-updates")
-
-  meld(data.raw["locomotive"]["fast-one-mk1"], updates.locomotive)
-  meld(data.raw["locomotive"]["fast-one-mk2"], updates.locomotive)
-  meld(data.raw["locomotive"]["fast-one-mk3"], updates.locomotive)
-
-  meld(data.raw["cargo-wagon"]["cargo-wagon-immortal-mk2"], updates.cargo_wagon)
-  meld(data.raw["cargo-wagon"]["cargo-wagon-immortal-mk3"], updates.cargo_wagon)
-
-  meld(data.raw["fluid-wagon"]["fluid-wagon-immortal-mk2"], updates.fluid_wagon)
-  meld(data.raw["fluid-wagon"]["fluid-wagon-immortal-mk3"], updates.fluid_wagon)
-end
-
-end;
 
 
 

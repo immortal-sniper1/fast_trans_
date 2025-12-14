@@ -59,9 +59,6 @@ if mods['pycoalprocessing'] then
   },
 
 
-
-
-
 });
 
 
@@ -241,13 +238,8 @@ if mods['pyrawores'] then
     result = "giga-fuel-mk2"
   },
 
-
-
-
-
-
 });
-
+end;
 
 
 ---------------------
@@ -290,12 +282,6 @@ for _ , loco in pairs(locos) do
   end
   burner.fuel_categories = array
 end
-
-
-
-
-
-
 end;
 
 
@@ -314,8 +300,6 @@ if mods["elevated-rails"] then
 
   meld(data.raw["fluid-wagon"]["fluid-wagon-immortal-mk2"], updates.fluid_wagon)
   meld(data.raw["fluid-wagon"]["fluid-wagon-immortal-mk3"], updates.fluid_wagon)
-end
-
 end;
 
 
