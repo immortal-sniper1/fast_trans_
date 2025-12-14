@@ -1,11 +1,13 @@
 {
   "name": "fast_trans",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "title": "Supersonic High Speed Train Mod",
   "author": "immortal_sniper1",
   "contact": "zerefulquirra@gmail.com",
   "factorio_version": "2.0",
-  "dependencies": ["base >= 2.0"],
+  "dependencies": [
+   "base >= 2.0",
+   "? elevated-rails"],
   "homepage": "none",
   "description": "Adds supersonic trains to Factorio for travel purpusees "
 }

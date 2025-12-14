@@ -1148,13 +1148,7 @@ data:extend({
 
 
 
-
-
-
-
-
-
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -1169,7 +1163,7 @@ data:extend({
     icon_size = 64,
     flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
     inventory_size = 80,
-    minable = {mining_time = 0.5, result = "cargo-wagon"},
+    minable = {mining_time = 0.5, result = "cargo-wagon-immortal-mk2"},
     mined_sound = sounds.deconstruct_large(0.8),
     max_health = 600,
     deliver_category = "vehicle",
@@ -1371,13 +1365,22 @@ data:extend({
 
 
 
+
+
+
+
+
+
+
+
+
   {
     type = "fluid-wagon",
     name = "fluid-wagon-immortal-mk2",
     icon = "__fast_trans__/graphics/fluid-wagon-immortal-mk2.png",
     icon_size = 64,
     flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-    minable = {mining_time = 0.5, result = "fluid-wagon"},
+    minable = {mining_time = 0.5, result = "fluid-wagon-immortal-mk2"},
     mined_sound = sounds.deconstruct_large(0.8),
     max_health = 600,
     capacity = 50000,
@@ -1500,7 +1503,7 @@ data:extend({
     icon_size = 64,
     flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
     inventory_size = 160,
-    minable = {mining_time = 0.5, result = "cargo-wagon"},
+    minable = {mining_time = 0.5, result = "cargo-wagon-immortal-mk3"},
     mined_sound = sounds.deconstruct_large(0.8),
     max_health = 600,
     deliver_category = "vehicle",
@@ -1709,7 +1712,7 @@ data:extend({
     icon = "__fast_trans__/graphics/fluid-wagon-immortal-mk3.png",
     icon_size = 64,
     flags = {"placeable-neutral", "player-creation", "placeable-off-grid"},
-    minable = {mining_time = 0.5, result = "fluid-wagon"},
+    minable = {mining_time = 0.5, result = "fluid-wagon-immortal-mk3"},
     mined_sound = sounds.deconstruct_large(0.8),
     max_health = 600,
     capacity = 100000,
