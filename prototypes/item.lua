@@ -1,7 +1,7 @@
 data:extend({
 
   {
-    type = "fuel-categories",
+    type = "fuel-category",
     name = "giga-fuel",
   },
   {
@@ -97,7 +97,7 @@ data:extend({
     name = "giga-fuel",
     fuel_value = "3GJ",
     fuel_acceleration_multiplier = 2.9,
-    fuel_category = "giga-fuel",
+    fuel_categories = { "giga-fuel"},
     fuel_top_speed_multiplier = 2.3,
     icon = "__fast_trans__/graphics/giga-fuel.png",
     icon_size = 64,
@@ -112,7 +112,7 @@ data:extend({
     name = "giga-fuel-mk2",
     fuel_value = "7GJ",
     fuel_acceleration_multiplier = 3.75,
-    fuel_category = "giga-fuel",
+    fuel_categories = { "giga-fuel"},
     fuel_top_speed_multiplier = 3.5,
     icon = "__fast_trans__/graphics/giga-fuel-mk2.png",
     icon_size = 64,
@@ -127,7 +127,7 @@ data:extend({
     name = "giga-fuel-mk3",
     fuel_value = "55GJ",
     fuel_acceleration_multiplier = 5.9,
-    fuel_category = "giga-fuel",
+    fuel_categories = { "giga-fuel"},
     fuel_top_speed_multiplier = 5.95,
     icon = "__fast_trans__/graphics/giga-fuel-mk3.png",
     icon_size = 64,

@@ -47,7 +47,7 @@ data:extend({
   },
 
   {
-    type = "fuel-categories",
+    type = "fuel-category",
     name = "giga-fuel",
   },
 

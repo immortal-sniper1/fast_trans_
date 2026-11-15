@@ -7,7 +7,7 @@ if mods["pycoalprocessing"] then
     fuel_value = "3GJ",
 
     fuel_acceleration_multiplier = 2.9,
-    fuel_category = "giga-fuel",
+    fuel_categories = {"giga-fuel"},
     fuel_top_speed_multiplier = 2.3,
     icon = "__fast_trans__/graphics/coke.png",
     icon_size = 32,
@@ -79,8 +79,7 @@ if mods["op_train_speed"] then
       name = "enriched-rocket-fuel--b2",
       icon = "__op_train_speed__/enriched-rocket-fuel-b2.png",
       icon_size = 32,
-
-      fuel_category = "giga-fuel",
+      fuel_categories = {"giga-fuel"},
       fuel_value = "180MJ",
       fuel_acceleration_multiplier = 6.0,
       fuel_top_speed_multiplier = 6.0,
@@ -109,8 +108,7 @@ if mods["op_train_speed"] then
       name = "enriched-rocket-fuel--b3",
       icon = "__op_train_speed__/enriched-rocket-fuel-b3.png",
       icon_size = 32,
-
-      fuel_category = "giga-fuel",
+      fuel_categories = {"giga-fuel"},
       fuel_value = "150MJ",
       fuel_acceleration_multiplier = 10.0,
       fuel_top_speed_multiplier = 7.0,
@@ -144,7 +142,7 @@ if mods["pyrawores"] then
     fuel_value = "3GJ",
 
     fuel_acceleration_multiplier = 2.9,
-    fuel_category = "giga-fuel",
+    fuel_categories = {"giga-fuel"},
     fuel_top_speed_multiplier = 2.3,
     icon = "__fast_trans__/graphics/coke.png",
     icon_size = 32,
